@@ -1,4 +1,4 @@
-import { FileText, Linkedin, Mail, Phone } from "lucide-react";
+import { Linkedin, Mail, Phone } from "lucide-react";
 
 // Contact details extracted from the local resume PDF, plus portfolio links.
 export const socialLinks = [
@@ -16,10 +16,5 @@ export const socialLinks = [
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/mohamed-abdeljalil-rouane/",
     icon: Linkedin
-  },
-  {
-    label: "Resume",
-    href: "/resume.pdf",
-    icon: FileText
   }
 ] as const;

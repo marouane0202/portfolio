@@ -7,8 +7,8 @@ export function Skills() {
     <section id="skills" className="section-shell">
       <SectionHeader
         eyebrow="Skills"
-        title="Technical strengths grouped for fast scanning."
-        description="A recruiter-friendly view of the tools, platforms, and engineering practices used across projects."
+        title="Core technical skills."
+        description="Tools, platforms, and engineering practices organized for quick review."
       />
       <div className="grid gap-5 md:grid-cols-2">
         {skillGroups.map((group) => (

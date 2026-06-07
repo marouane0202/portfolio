@@ -9,7 +9,7 @@ export function Contact() {
         <SectionHeader
           eyebrow="Contact"
           title="Available for software engineering opportunities."
-          description="Reach out for roles, collaborations, or portfolio feedback. All links are defined locally in the socialLinks data file."
+          description="Reach out for roles, collaborations, or portfolio feedback."
         />
         <div className="grid min-w-0 grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {socialLinks.map((link) => (

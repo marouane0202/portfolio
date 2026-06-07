@@ -7,8 +7,8 @@ export function ExperienceTimeline() {
     <section id="experience" className="section-shell">
       <SectionHeader
         eyebrow="Experience"
-        title="LinkedIn-style work history, kept local."
-        description="Role summaries, achievements, and technologies are imported directly from local data files."
+        title="Professional experience."
+        description="A concise timeline of roles, impact, and technologies used in delivery."
       />
       <div className="space-y-5">
         {experiences.map((item) => (
