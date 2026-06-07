@@ -7,15 +7,15 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     category: "Backend",
-    skills: ["Java", "Spring Boot", "Microservices"]
+    skills: ["Java", "Spring Boot", "PHP", "Symfony", "Microservices"]
   },
   {
     category: "Web Technologies",
-    skills: ["React.js", "Next.js"]
+    skills: ["React.js", "Next.js", "Angular"]
   },
   {
     category: "Database Technologies",
-    skills: ["Oracle", "MySQL", "SQL Server"]
+    skills: ["Oracle", "MySQL", "MongoDB"]
   },
   {
     category: "DevOps & Delivery",
