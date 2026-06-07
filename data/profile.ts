@@ -1,12 +1,14 @@
 // Portfolio identity data extracted from the local resume PDF.
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export const profile = {
   name: "Mohamed Abdeljalil Rouane",
   title: "Senior Software Engineer",
   location: "Casablanca, Morocco",
   email: "mohamedabdeljalilrouane@gmail.com",
   phone: "+212 681781958",
-  website: "https://portfolio.local",
-  resumeUrl: "/resume.pdf",
+  website: "https://marouane0202.github.io/portfolio",
+  resumeUrl: `${basePath}/resume.pdf`,
   summary:
     "Full-Stack Engineer with three years of experience in the IT sector, specializing in robust backend systems and intuitive frontend interfaces.",
   about:
