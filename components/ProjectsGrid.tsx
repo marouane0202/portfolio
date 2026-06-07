@@ -12,16 +12,16 @@ export function ProjectsGrid() {
         description="Project entries support links, technology tags, screenshots, and concise impact statements."
       />
       {projects.length > 0 ? (
-        <div className="grid gap-5 lg:grid-cols-3">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => (
-          <article key={project.name} className="surface overflow-hidden transition hover:-translate-y-1">
+          <article key={project.name} className="surface min-w-0 overflow-hidden transition hover:-translate-y-1">
             {project.screenshot ? (
               <div className="relative aspect-[16/10] bg-paper dark:bg-white/10">
                 <Image src={project.screenshot} alt={`${project.name} screenshot`} fill sizes="(min-width: 1024px) 33vw, 100vw" className="object-cover" />
               </div>
             ) : null}
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-ink dark:text-paper">{project.name}</h3>
+            <div className="p-5 sm:p-6">
+              <h3 className="break-safe text-lg font-bold text-ink sm:text-xl dark:text-paper">{project.name}</h3>
               <p className="muted mt-3 text-sm leading-6">{project.description}</p>
               <p className="mt-4 border-l-2 border-saffron pl-3 text-sm font-semibold text-moss dark:text-teal-300">{project.impact}</p>
               <div className="mt-5 flex flex-wrap gap-2">

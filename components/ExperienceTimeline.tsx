@@ -12,21 +12,21 @@ export function ExperienceTimeline() {
       />
       <div className="space-y-5">
         {experiences.map((item) => (
-          <article key={`${item.company}-${item.role}`} className="surface p-6 transition hover:-translate-y-1">
+          <article key={`${item.company}-${item.role}`} className="surface min-w-0 p-5 transition hover:-translate-y-1 sm:p-6">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-              <div className="flex gap-4">
+              <div className="flex min-w-0 gap-4">
                 <div className="mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-moss/10 text-moss dark:bg-teal-300/10 dark:text-teal-300">
                   <BriefcaseBusiness size={21} />
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold text-ink dark:text-paper">{item.role}</h3>
-                  <p className="mt-1 font-semibold text-stone-700 dark:text-stone-200">{item.company}</p>
+                <div className="min-w-0">
+                  <h3 className="break-safe text-lg font-bold text-ink sm:text-xl dark:text-paper">{item.role}</h3>
+                  <p className="break-safe mt-1 font-semibold text-stone-700 dark:text-stone-200">{item.company}</p>
                   <p className="muted mt-1 text-sm">
                     {item.location} / {item.type}
                   </p>
                 </div>
               </div>
-              <p className="rounded-md bg-paper px-3 py-2 text-sm font-semibold text-stone-700 dark:bg-white/10 dark:text-stone-200">
+              <p className="w-fit rounded-md bg-paper px-3 py-2 text-sm font-semibold text-stone-700 dark:bg-white/10 dark:text-stone-200">
                 {item.startDate} - {item.endDate}
               </p>
             </div>

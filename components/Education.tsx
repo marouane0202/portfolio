@@ -9,10 +9,10 @@ export function Education() {
       {education.length > 0 ? (
         <div className="grid gap-5 md:grid-cols-2">
           {education.map((item) => (
-            <article key={item.institution} className="surface p-6">
+            <article key={item.institution} className="surface min-w-0 p-5 sm:p-6">
               <GraduationCap className="text-coral" size={26} />
-              <h3 className="mt-4 text-xl font-bold text-ink dark:text-paper">{item.degree}</h3>
-              <p className="mt-1 font-semibold text-stone-700 dark:text-stone-200">{item.institution}</p>
+              <h3 className="break-safe mt-4 text-lg font-bold text-ink sm:text-xl dark:text-paper">{item.degree}</h3>
+              <p className="break-safe mt-1 font-semibold text-stone-700 dark:text-stone-200">{item.institution}</p>
               <p className="muted mt-1 text-sm">
                 {item.location} / {item.startDate} - {item.endDate}
               </p>
@@ -27,7 +27,7 @@ export function Education() {
           ))}
         </div>
       ) : (
-        <div className="surface p-6">
+        <div className="surface p-5 sm:p-6">
           <GraduationCap className="text-coral" size={26} />
           <p className="muted mt-4 leading-7">
             Academic entries are ready to be added in <span className="font-semibold text-ink dark:text-paper">data/education.ts</span> once you provide the LinkedIn education details.

@@ -37,15 +37,15 @@ body {
 
 @layer components {
   .section-shell {
-    @apply mx-auto w-full max-w-6xl px-5 py-16 sm:px-6 lg:px-8 lg:py-20;
+    @apply mx-auto w-full max-w-6xl px-4 py-12 sm:px-6 sm:py-16 lg:px-8 lg:py-20;
   }
 
   .section-kicker {
-    @apply text-sm font-semibold uppercase tracking-[0.18em] text-moss dark:text-teal-300;
+    @apply text-xs font-semibold uppercase tracking-[0.16em] text-moss dark:text-teal-300 sm:text-sm sm:tracking-[0.18em];
   }
 
   .section-title {
-    @apply mt-3 text-3xl font-black tracking-normal text-ink dark:text-paper sm:text-4xl;
+    @apply mt-3 text-2xl font-black tracking-normal text-ink dark:text-paper sm:text-4xl;
   }
 
   .surface {
@@ -62,5 +62,10 @@ body {
 
   .tag-soft {
     @apply rounded-md border border-stone-200 bg-paper px-3 py-1.5 text-xs font-semibold text-stone-700 dark:border-white/10 dark:bg-white/10 dark:text-stone-200;
+  }
+
+  .break-safe {
+    overflow-wrap: anywhere;
+    word-break: break-word;
   }
 }
