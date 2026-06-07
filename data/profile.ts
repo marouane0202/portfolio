@@ -3,7 +3,7 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 export const profile = {
   name: "Mohamed Abdeljalil Rouane",
-  title: "Senior Software Engineer",
+  title: "Software Engineer",
   location: "Casablanca, Morocco",
   email: "mohamedabdeljalilrouane@gmail.com",
   phone: "+212 681781958",
